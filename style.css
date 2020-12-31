@@ -1,56 +1,220 @@
+.symbols {
+  width: 25px;
+  height: 25px;
+}
 body {
-  height: 80vh;
+  height: calc(100vh - 8em);
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgb(25, 25, 25);
 }
-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  
-  font-size: 3vh;
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Hacker Noon V1";
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+footer {
+  background-color: rgb(0, 187, 0);
+  position: -webkit-sticky;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 5vh;
+  font-size: 2.5vh;
   align-items: center;
-  justify-items: center;
-  height: 99vh;
+  line-height: 3vh;
 }
 
-.logo {
-  padding: 7px;
-  display: grid;
-  align-self: stretch;
-  justify-self: stretch;
-  text-decoration: none;
-  border: 1px solid black;
+nav {
+  padding: 10px;
+  float: right;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
-#symbol-js {
-  text-align: center;
-  justify-self: stretch;
-  align-self: center;
-  font-size: 8vh;
+#logo > div {
+  padding: 10px;
+  color: rgb(25, 25, 25);
+}
+nav > a {
+  margin-right: 20px;
+}
+footer > #logo {
+  float: left;
+}
+aside {
+  border: 1px solid rgb(0, 187, 0);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  writing-mode: vertical-rl;
+  justify-content: space-between;
+  align-items: stretch;
+}
+aside > a {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.75);
+}
+figure {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
   color: black;
-  text-decoration: none;
 }
 
-/* #symbol-js:hover {
-  color: white;
-  background-color: black;
-  text-decoration: none;
-} */
-
-.logo:hover{
-  background-color: black;
-  /* background-color: black; */
+main {
+  border: 1px solid black;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 95vh;
+}
+.profile-picture {
+  border-radius: 50%;
+}
+.introduction {
+  text-align: center;
 }
 
-.logo:hover > #symbol-js {
-  color: white;
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html {
+  min-height: 100%;
+  overflow: hidden;
 }
 
+.css-typing p {
+  text-align: center;
+  border-right: 0.15em solid whitesmoke;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 0ch;
+  -webkit-animation: type 0.5s steps(6, end);
+  animation: type 0.5s steps(6, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
 
-@media screen and (max-width: 720px) {
+.css-typing p:nth-child(2) {
+  width: 11.5em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
 
-  main {
-    grid-auto-flow: column;
-    grid-template-rows: repeat(3, 1fr);
+.css-typing p:nth-child(3) {
+  width: 7.3em;
+  opacity: 0;
+  -webkit-animation: type3 5s steps(20, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 5s steps(20, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
   }
-  .logo {
-    width: 98vw;
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    width: 3ch;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0ch;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0ch;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0ch;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0ch;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0ch;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
   }
 }
