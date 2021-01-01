@@ -222,3 +222,35 @@ html {
     border-color: tranparent;
   }
 }
+nav > button {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  nav > button {
+    /*makes the button visible*/
+    display: block;
+
+    /*since we are here, we can style it a little bit!*/
+    /* padding: 2vw; */
+    font-size: 2.5vh;
+    background-color: rgb(0, 187, 0);
+    border: none;
+
+    /*outline none removes the default blue border that appears anytime you click on the button*/
+    outline: none;
+
+    cursor: pointer;
+    align-self: flex-end;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    float: none;
+  }
+  nav > a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
