@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "hacker";
+  src: url("hacker.ttf") format("truetype");
+}
 .symbols {
   width: 25px;
   height: 25px;
@@ -11,7 +15,7 @@ body {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Hacker Noon V1";
+  font-family: "hacker";
   text-transform: uppercase;
   letter-spacing: 4px;
 }
