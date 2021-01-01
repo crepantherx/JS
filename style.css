@@ -254,3 +254,17 @@ nav > button {
     margin-bottom: 10px;
   }
 }
+#my-name {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #30cfd0 0%, #00ff4c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10vh;
+}
+#brand {
+  text-transform: uppercase;
+  font-weight: bolder;
+  background: linear-gradient(to right, black 0%, blue 150%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

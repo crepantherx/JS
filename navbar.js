@@ -10,6 +10,6 @@ $(document).ready(function(){
         }
       
       /* this function toggle the visibility of our "li" elements */
-      $("nav > a").toggle("slow");
+      $("nav > a").toggle("fast");
     });
   });
