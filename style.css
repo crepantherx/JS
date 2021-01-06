@@ -34,8 +34,9 @@ footer {
 
 nav {
   padding: 10px;
-  float: right;
-  justify-content: space-between;
+  /* float: right; */
+  display: flex;
+  justify-content: space-around;
   text-transform: uppercase;
 }
 #logo > div {
@@ -259,7 +260,7 @@ nav > button {
   background: linear-gradient(to right, #30cfd0 0%, #00ff4c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 10vh;
+  font-size: 7vh;
 }
 #brand {
   text-transform: uppercase;
@@ -267,4 +268,10 @@ nav > button {
   background: linear-gradient(to right, black 0%, blue 150%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#my-name:hover {
+  color: linear-gradient(to right, black 0%, blue 150%);
+  
+
 }
