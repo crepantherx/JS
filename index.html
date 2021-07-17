@@ -37,8 +37,18 @@
                 <span id="my-name">CREPANTHERX</span>
                 <p>
                     <br>Data Analyst, Tech Mahindra<br><br>
-                </p>
-      
+                </p><br>
+                <details class="details-example">
+                    <summary id="summary" style="border: 1px solid rgb(0, 100, 0); padding: 3px;">Show More</summary>
+                    <br>    
+                    <p id="rest">
+                        I like to implement <br><br>complex ideas down to reality<br><br>
+                        If you are here for that
+                        <br><br>
+                        Do write me a mail
+                    </p>
+
+                </details>
               
               </div>
               </div>
@@ -71,6 +81,20 @@
         scale: 1.1
 })
             })
+            const detailsElement = document.querySelector('.details-example');
+            const summary = document.querySelector('#summary');
+
+
+detailsElement.addEventListener('toggle', event => {
+    if (event.target.open) {
+        summary.innerHTML = "Show Less"
+        summary.style.backgroundColor="rgb(0, 100, 0)";
+    }else  {
+        summary.innerHTML = "Show More"
+        summary.style.backgroundColor="initial";
+
+    }
+});
     </script>
     </body>
 
