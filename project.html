@@ -17,9 +17,10 @@
                 
             }
             img {
+                object-fit: cover;
                 margin: 15px;
             }
-            main > section {
+            main > div {
                 border: 1px solid rgb(0, 187, 0);
             }
             main > section > article {
@@ -43,26 +44,36 @@
 
 
         <main>
+
+            <div class="data-tilt">
             <section>
                 <label for="">Visualizing Algorithms</label>
-                <img src="me.jpg" alt="" >
-                <button>Github</button><button>Website</button>
+                <img src="map.jpg" alt="" width="200" height="200">
+                <button><a href="https://github.com/crepantherx/algorithms">Github</a></button><button><a href="https://algo.crepantherx.dev/">Website</a></button>
             </section>
-            <section>
-                <label for="">Visualizing Algorithms</label>
-                <img src="me.jpg" alt="" >
-                <button>Github</button><button>Website</button>
-            </section>
-            <section>
-                <label for="">Visualizing Algorithms</label>
-                <img src="me.jpg" alt="" >
-                <button>Github</button><button>Website</button>
-            </section>
-            <section>
-                <label for="">Visualizing Algorithms</label>
-                <img src="me.jpg" alt="" >
-                <button>Github</button><button>Website</button>
-            </section>
+            </div>
+            
+            <div class="data-tilt">
+                <section>
+                    <label for="">Number Counter</label>
+                    <img src="number.jpg" alt="" width="200" height="200">
+                    <button><a href="https://github.com/crepantherx/counter">Github</a></button><button>Website</button>
+                </section>
+                </div>
+                <div class="data-tilt">
+                    <section>
+                        <label for="">Previous Website</label>
+                        <img src="prev.png" alt="" width="200" height="200">
+                        <button><a href="https://github.com/crepantherx/portfolio">Github</a></button><button><a href="https://portfolio.crepantherx.dev/">Website</a></button>
+                    </section>
+                    </div>
+                <div class="data-tilt">
+                    <section>
+                        <label for="">For Linux Lover's</label>
+                        <img src="linux.jpg" alt="" width="200" height="200">
+                        <button>Coming Soon</button>
+                    </section>
+                    </div>
         </main>
 
        <footer>
@@ -81,5 +92,15 @@
             </nav>
        </footer>
 
+       <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+       <script src="tilt.js"></script>
+       <script type="text/javascript">
+            $(document).ready(function(){
+
+    $('.data-tilt').tilt({
+        scale: 1.1
+})
+            })
+    </script>
     </body>
 </html>
