@@ -74,12 +74,23 @@ a {
 }
 
 main {
-  border: 1px solid black;
+  /* border: 1px solid black;
   display: grid;
   justify-items: center;
   align-items: center;
   height: 95vh;
-  grid-auto-flow: column;
+  grid-auto-flow: column; */
+  display: grid;
+  place-items: center;
+  place-content: center;
+  grid-template-columns: auto auto auto;
+  height: 95vh;
+  gap: 27px;
+}
+main > div > section{
+  display: grid;
+  place-items: center;
+  place-content: center;
 }
 .profile-picture {
   border-radius: 50%;
@@ -283,4 +294,10 @@ nav > button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.8vh;
+}
+
+#home{
+  position: absolute;
+  top: 4vh;
+  left: 3vw;
 }
