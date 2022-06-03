@@ -12,6 +12,14 @@
         <title>
             www.crepantherx.dev
         </title>
+        <style>
+            #badge{
+                position: absolute;
+                top: 30px;
+                left: 25px;
+                width: 100px;
+            }
+        </style>
     </head>
     
     <body>
@@ -30,7 +38,9 @@
             <!-- <div class="css-typing"> -->
             <div>
                 <div style="text-align: center;">
-                <p>
+
+
+                    <p>
                     Hello, I'm
                 </p>
                 <br>
@@ -53,12 +63,12 @@
               </div>
               </div>
             </div> 
-            <div style="width: 25vw"></div>       
-            <div id="data-tilt"><a href="https://app.daily.dev/crepantherx"><img src="https://api.daily.dev/devcards/a2afad4ead214beab7aa7c697c3a9b43.png?r=6c4" width="300" alt="www.crepantherx.dev"/></a></div>
-        <div id="data-tilt">
-        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b0a3a21b-c51f-4ede-b1ec-da1f7e73d874" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
-        </main>
+            <div style="width: 25vw"></div>
+    <img id='badge' src="./icon/ade.png" alt="">
+    <div class="data-tilt">
+        <a href="https://app.daily.dev/crepantherx"><img src="https://api.daily.dev/devcards/a2afad4ead214beab7aa7c697c3a9b43.png?r=6c4" width="270" alt="www.crepantherx.dev"/></a>
+    </div>
+    </main>
 
        <footer>
            <!-- <div id="logo">
@@ -81,7 +91,7 @@
        <script type="text/javascript">
             $(document).ready(function(){
 
-    $('#data-tilt').tilt({
+    $('.data-tilt').tilt({
         scale: 1.1
 })
             })
