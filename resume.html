@@ -7,11 +7,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>
-            www.crepantherx.dev
+            de.crepantherx.in
         </title>
+        <style>
+
+            #resume-main{
+                display: grid; 
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+                /* gap: 10px; */
+            }
+
+        </style>
     </head>
     
     <body>
+
+        <a href="https://de.crepantherx.in">
+            <img src="../icon/home.png" id='home' alt="">
+        </a>
 
         <aside>
             <a href="https://github.com/crepantherx">
@@ -22,22 +35,25 @@
             </a>
         </aside>
 
-        <main>
-            <div id="data-tilt"><a href="current.pdf">
-                <img src="resume.png" alt="" width="400" style="border-radius: 4%;">
-
+        <main id="resume-main">
+    <div class="data-tilt">
+        <a href="current.pdf">
+            <img src="resume-de.png" alt="" width="400" style="border-radius: 4%;">
+        </a>
+    </div>
+            <div class="data-tilt"><a href="current.pdf">
+                <img src="resume-ml.png" alt="" width="400" style="border-radius: 4%;">
             </a></div>
-            
         </main>
 
        <footer>
-           <div id="logo">
+           <!-- <div id="logo">
             <div>
                 <a href="index.html">crepantherx</a>
             </div>
-        </div>
+        </div> -->
             <nav>
-                <a href="current.pdf">Resume</a>
+                <!-- <a href="current.pdf">Resume</a> -->
                 <a href="project.html">Project</a>
                 <a href="cv.pdf">CV</a>
                 <a href="https://crepantherx.hashnode.dev/">Blog</a>
@@ -49,12 +65,11 @@
        <script src="tilt.js"></script>
        <script type="text/javascript">
             $(document).ready(function(){
-
-    $('#data-tilt').tilt({
-    glare: true,
-    maxGlare: .3,
-    scale: 1.2
-})
+                $('.data-tilt').tilt({
+                    glare: true,
+                    maxGlare: .3,
+                    scale: 1
+                })
             })
     </script>
     </body>
