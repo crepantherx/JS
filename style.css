@@ -272,7 +272,7 @@ nav > button {
   background: linear-gradient(to right, #30cfd0 0%, #00ff4c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 #brand {
   text-transform: uppercase;
