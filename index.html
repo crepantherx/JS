@@ -20,10 +20,14 @@
             left: 25px;
             width: 100px;
         }
+
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Two columns, each taking up 1 fraction of the available space */
-            gap: 20px; /* Gap between grid items */
+            grid-template-columns: 1fr;
+            place-items: center;
+            /* Two columns, each taking up 1 fraction of the available space */
+            gap: 20px;
+            /* Gap between grid items */
         }
 
         .grid-item {
@@ -35,8 +39,10 @@
         .inner-grid {
             display: grid;
             place-items: center;
-            grid-template-columns: auto; /* 3 columns */
-            grid-auto-rows: auto; /* Adjust the row height automatically */
+            grid-template-columns: auto;
+            /* 3 columns */
+            grid-auto-rows: auto;
+            /* Adjust the row height automatically */
             gap: 30px;
         }
 
@@ -48,10 +54,13 @@
 
         .profile-read {
             display: grid;
-            place-items: center; /* Align items both vertically and horizontally */
-            grid-template-columns: auto; /* 1 column */
+            place-items: center;
+            /* Align items both vertically and horizontally */
+            grid-template-columns: auto;
+            /* 1 column */
             gap: 20px;
-            text-align: center; /* Align text horizontally */
+            text-align: center;
+            /* Align text horizontally */
         }
 
         .profile-read-item {
@@ -61,28 +70,34 @@
         }
 
         .profile-picture {
-            width: 250px; /* Adjust the width as needed */
-            height: 250px; /* Adjust the height as needed */
-            border-radius: 10%; 
-            object-fit: cover; /* Ensures the image covers the entire area */
-            border: 2px solid  #a5b0a8 ; /* Optional: Add border around the image */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow effect */
+            width: 150px;
+            /* Adjust the width as needed */
+            height: 150px;
+            /* Adjust the height as needed */
+            border-radius: 50%;
+            object-fit: cover;
+            /* Ensures the image covers the entire area */
+            border: 2px solid black;
+            /* Optional: Add border around the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Optional: Add shadow effect */
             /* transform: scale(3); */
         }
 
         .quoted-paragraph {
-        /* background-color: #f9f9f9; */
-        border-left: 6px solid #ccc;
-        margin: 20px 0;
-        padding: 10px 20px;
-        color: black;
+            /* background-color: #f9f9f9; */
+            border-left: 6px solid #ccc;
+            margin: 20px 0;
+            padding: 10px 20px;
+            color: black;
         }
 
         blockquote {
-        font-size: 18px;
-        font-style: italic;
+            font-size: 18px;
+            font-style: italic;
         }
-/* 
+
+        /* 
         blockquote p {
         margin-bottom: 10px;
         }
@@ -94,9 +109,10 @@
         } */
 
         .quote-symbol {
-        font-size: 48px;
-        color: #666;
+            font-size: 48px;
+            color: #666;
         }
+
         .custom-img {
             width: 100px;
 
@@ -104,24 +120,30 @@
 
         #arrow {
             position: fixed;
-            top: 20px; 
-            right: 40px; 
+            top: 20px;
+            right: 40px;
             width: 50px;
         }
 
-button {
-    padding: 10px;
-    background-color: transparent;
-    border-radius: 20px;
-}
+        button {
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 20px;
+        }
 
-.button-link {
-    color: #00ff4c;
-    /* border: 1px solid rgb(0, 100, 0); */
-    border: 1 px solid #00ff4c;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
+        .button-link {
+            color: #00ff4c;
+            /* border: 1px solid rgb(0, 100, 0); */
+            border: 1 px solid #00ff4c;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        .shadowed-box {
+    background-color: transparent; /* Background color */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 0%; /* Adjust border radius as needed */
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic effect */
 }
 
     </style>
@@ -143,98 +165,50 @@ button {
     <header>
         <img id='badge' src="./icon/ade.png" alt="">
         <img id='badge' src="./icon/ade.png" alt="">
-        
+
     </header>
 
-    
+
     <main class="grid-container">
-        <img id='arrow' id = "point" src="./arrow.png" alt="">
         <div class="grid-item">
             <div class="profile-read">
                 <div style="text-align: center;"><br>
                     <img class="profile-picture" src="./self.png" alt="Profile Picture"><br><br>
-                    <!-- <img class="profile-picture data-tilt" src="./self.png" alt="Profile Picture"><br> -->
-                    
                     <span id="my-name">Sudhir Singh</span>
                     <p>
-                        <br>Data Engineer<br><br>
-                </p>
-                
-
-                <!-- <b class="quote-symbol" style="text-align: left;">&ldquo;</b> -->
-
-                      </div>
-                   
-                    
-                    <!-- <details class="details-example">
-                        <summary id="summary" style="border: 1px solid rgb(0, 100, 0); padding: 3px;">Show More</summary>
-                        <br>
-                        <p id="rest">
-                            I like to implement <br><br>complex ideas down to reality<br><br>
-                            If you are here for that
-                            <br><br>
-                            Do write me a mail
-                        </p>
-
-                    </details> -->
-
-
+                        <br>Data Engineer<br>
+                    </p>
                 </div>
-            </div>  
-        </div>
-
-
-
-        <div  class="grid-item">
-            <div class="inner-grid" >
-                
-                <!-- <div class="data-tilt" class="inner-grid-item">1</div> -->
-                <!-- <img class="data-tilt" src="./databricks.png" alt="" style="width: 150px; ">
-                <img class="data-tilt" src="./python.png" alt="" style="width: 150px; ">
-                <img class="data-tilt" src="./pandas.png" alt="" style="width: 150px; ">
-                <img class="data-tilt" src="./numpy.png" alt="" style="width: 150px; "> -->
-                
-                
-                <br>Specialized in <br>
-                <p class='data-tilt' style="text-align: center;font-size: 13px; line-height:150%; width: 60%; word-spacing: 6px;margin: 0 auto; text-transform:none; background-color: rgb(28, 29, 28); border-radius: 20px; padding: 30px;">
-                    <img class="custom-img" src="./spark.png" alt="">
-                    
-                    <img class="custom-img" src="./databricks.png" alt="">
-                    <img class="custom-img" src="./python.png" alt="">
-                    <img class="custom-img" src="./pandas.png" alt="">
-                    <img class="custom-img" src="./numpy.png" alt="">
-                    <img class="custom-img" src="./azure.png" alt=""><br>
-                    <img class="custom-img" src="./aws.png" alt="">
-                    <img class="custom-img" src="./tensorflow.png" alt="">
-                    <img class="custom-img" src="./snowflake.png" alt="">
-                    <img class="custom-img" src="./kafka.png" alt="">
-                    <br>
-                </p><br>
-                Seeking mentorship?
-                <div class="button-container">
-                    <button>
-                        <a href="https://topmate.io/embed/profile/crepantherx?theme=93C5F9" class="button-link">
-                             I'm here for you
-                        </a>
-                    </button>
-                </div>
-<!-- 
-    
-                    specialized in optimizing Apache Spark Jobs, Azure Databricks, and crafting robust CI/CD pipelines. 
-                    With over 4 years of experience, I've led transformative projects globally, 
-                    from architecting data ingestion frameworks to mentoring teams and driving cloud migrations.</p>
-                     -->
-                <!-- <img class="data-tilt" src="./azure.png" alt="" style="width: 150px; ">
-                <img class="data-tilt" src="./aws.png" alt="" style="width: 150px; ">
-                <img class="data-tilt" src="./tensorflow.png" alt="" style="width: 150px; ">
-                <img class="data-tilt" src="./snowflake.png" alt="" style="width: 150px; ">
-                <img class="data-tilt" src="./kafka.png" alt="" style="width: 150px; "> -->
             </div>
-            <!-- <a href="https://app.daily.dev/crepantherx"><img
-                    src="https://api.daily.dev/devcards/a2afad4ead214beab7aa7c697c3a9b43.png?r=6c4" width="270"
-                    alt="de.crepantherx.in" /></a> -->
         </div>
 
+        <div style="font-size: 12px;">Specialized in <br></div>
+        <div class="inner-grid"  >  
+            <p class="shadowed-box" style="text-align: center;font-size: 13px; line-height:150%; width: 100%; word-spacing: 6px;margin: 0 auto; text-transform:none; background-color: rgb(28, 29, 28); border-radius: 20px; padding: 30px;">
+                <img class="custom-img" src="./spark.png" alt="">
+                <img class="custom-img" src="./databricks.png" alt="">
+                <img class="custom-img" src="./python.png" alt="">
+                <img class="custom-img" src="./pandas.png" alt="">
+                <img class="custom-img" src="./numpy.png" alt="">
+                <img class="custom-img" src="./azure.png" alt=""><br>
+                <img class="custom-img" src="./aws.png" alt="">
+                <img class="custom-img" src="./tensorflow.png" alt="">
+                <img class="custom-img" src="./snowflake.png" alt="">
+                <img class="custom-img" src="./kafka.png" alt="">
+                <br>
+            </p>
+        </div>
+
+        <!-- <div style="font-size: 12px;">Seeking mentorship?</div> -->
+        <div style="font-size: 1vh; text-align: center; word-spacing: 3px;" >Seeking Mentorship ? <br>Book your appointment<a href="https://topmate.io/embed/profile/crepantherx?theme=93C5F9" class="button-link">here</a>
+            <!-- <button>
+                <a href="https://topmate.io/embed/profile/crepantherx?theme=93C5F9" class="button-link">
+                    Seeking mentorship ? Book Appointment
+                </a>
+            </button> -->
+        </div>
+
+        <img id='arrow' id="point" src="./arrow.png" alt="">
     </main>
 
     <footer>
@@ -261,8 +235,8 @@ button {
 
             $('.data-tilt').tilt({
                 glare: true,
-                    maxGlare: .3,
-                    scale: 1
+                maxGlare: .3,
+                scale: 1
             })
         })
         const detailsElement = document.querySelector('.details-example');
