@@ -217,7 +217,10 @@
         </div>
 
         <div style="display: grid; place-items: center; place-content: center;">
-            <div class="a4-document shadowed-box" id="resume-content" style="background-color: #fff; color: #111;">
+            <div class="a4-document shadowed-box" id="resume-content" style="background-color: #fff; color: #111; border-radius: 2%/2%;  padding-top: 3vh;
+            padding-bottom: 3vh;
+            padding-right: 5vh;
+            padding-left: 5vh;">
                 
             </div>
             <button id="download-pdf" style="color: #fff; margin: 20px;">                
@@ -267,26 +270,7 @@
                 scale: 1
             })
         })
-        const detailsElement = document.querySelector('.details-example');
-        const summary = document.querySelector('#summary');
-
-
-        detailsElement.addEventListener('toggle', event => {
-            if (event.target.open) {
-                summary.innerHTML = "Show Less"
-                summary.style.backgroundColor = "rgb(0, 100, 0)";
-            } else {
-                summary.innerHTML = "Show More"
-                summary.style.backgroundColor = "initial";
-
-            }
-
-
-
-
-
-        });
-    </script>
+       </script>
 </body>
 
 </html>

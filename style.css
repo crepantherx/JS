@@ -334,24 +334,7 @@ nav > button {
 
 
 
-.a4-document {
-  width: calc((100vh - 160px) / 1.414); /* A4 aspect ratio (1.414) with 20% margin */
-  height: calc(100vh - 160px); /* 20% margin from top and bottom */
-  max-width: 80vw; /* Ensure it doesn't exceed 80% of viewport width */
-  max-height: 80vh; /* Ensure it doesn't exceed 80% of viewport height */
-  border: 1px solid #ddd; /* Optional: Add a border to mimic the paper edge */
-  box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.1), -8px -8px 20px rgba(0, 0, 0, 0.5);
-  padding: 20px; /* Optional: Add some padding inside the box */
-  overflow-y: auto; /* Add vertical scroll if content exceeds the box height */
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  padding-right: 5vh;
-  padding-left: 5vh;
-  background-color: #fff; /* White background to resemble paper */
-  border-radius: 2%/2%;
 
-
-}
 
 
   .a4-document * {
@@ -376,3 +359,21 @@ nav > button {
     font-size: 1.3vh; /* Example of font size for paragraphs and list items */
 }
 
+.a4-document {
+  width: calc((100vh - 160px) / 1.414); /* A4 aspect ratio (1.414) with 20% margin */
+  height: calc(100vh - 160px); /* 20% margin from top and bottom */
+  max-width: 80vw; /* Ensure it doesn't exceed 80% of viewport width */
+  max-height: 80vh; /* Ensure it doesn't exceed 80% of viewport height */
+  border: 1px solid #ddd; /* Optional: Add a border to mimic the paper edge */
+  box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.1), -8px -8px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Optional: Add some padding inside the box */
+  overflow-y: auto; /* Add vertical scroll if content exceeds the box height */
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
+  background-color: #fff; /* White background to resemble paper */
+  border-radius: 2%/2%;
+
+
+}
