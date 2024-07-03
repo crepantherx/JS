@@ -12,8 +12,8 @@ body {
   background-color: rgb(25, 25, 25);
 }
 * {
-  margin: 0;
-  padding: 0px;
+  /* margin: 0;
+  padding: 0px; */
   box-sizing: border-box;
   font-family: "hacker";
   text-transform: uppercase;
@@ -302,3 +302,77 @@ nav > button {
   top: 4vh;
   left: 3vw;
 }
+
+
+.a4-document {
+  width: calc((100vh - 160px) / 1.414); /* A4 aspect ratio (1.414) with 20% margin */
+  height: calc(100vh - 160px); /* 20% margin from top and bottom */
+  max-width: 80vw; /* Ensure it doesn't exceed 80% of viewport width */
+  max-height: 80vh; /* Ensure it doesn't exceed 80% of viewport height */
+  border: 1px solid #ddd; /* Optional: Add a border to mimic the paper edge */
+  box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.1), 
+  -8px -8px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Optional: Add some padding inside the box */
+  overflow-y: auto; /* Add vertical scroll if content exceeds the box height */
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
+  background-color: #fff; /* White background to resemble paper */
+  border-radius: 1vh;
+
+
+}
+
+
+  .a4-document * {
+    font-family: Arial, sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+  
+  
+
+
+  .a4-document h2.header {
+    font-size: calc(1.7vh); /* Example of font size for headers */
+}
+
+.a4-document h3.subheader {
+    font-size: calc(1.4vh); /* Example of font size for subheaders */
+}
+
+.a4-document p,
+.a4-document li {
+    font-size: 1.3vh; /* Example of font size for paragraphs and list items */
+}
+
+      /* Hide the scrollbar while allowing scrolling */
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* Ensure the content is still scrollable */
+.scrollable-content {
+  overflow-y: auto; /* Enable vertical scrolling */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+
+.subsection {
+  margin-top: 0; /* Remove top margin to reduce space */
+}
+
+.subsection h3.subheader {
+  margin-bottom: 5px; /* Adjust bottom margin for closer alignment */
+}
+
+.subsection p.date {
+  margin-top: 0; /* Remove top margin to reduce space */
+}
+
+.subsection .itemize {
+  margin-top: 10px; /* Adjust top margin for content spacing */
+}
+/* Add more specific styles as needed */

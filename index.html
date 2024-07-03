@@ -150,11 +150,14 @@
             padding: 10px;
         }
         .shadowed-box {
-    background-color: transparent; /* Background color */
-    padding: 20px; /* Adjust padding as needed */
-    border-radius: 0%; /* Adjust border radius as needed */
-    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic effect */
-}
+            background-color: transparent; /* Background color */
+            padding: 20px; /* Adjust padding as needed */
+            border-radius: 0%; /* Adjust border radius as needed */
+            box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic effect */
+        }
+        .split{
+            display: grid;
+        }
 
     </style>
     <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
@@ -178,44 +181,59 @@
     </header>
 
 
-    <main class="grid-container">
-        <div class="grid-item">
-            <div class="profile-read">
-                <div style="text-align: center;"><br>
-                    <img class="profile-picture" src="./self.png" alt="Profile Picture"><br><br>
-                    <span id="my-name">Sudhir Singh</span>
-                    <p>
-                        <br>Data Engineer<br>
-                    </p>
+    <main class="split">
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="profile-read">
+                    <div style="text-align: center;"><br>
+                        <img class="profile-picture" src="./self.png" alt="Profile Picture"><br><br>
+                        <span id="my-name">Sudhir Singh</span>
+                            <div style="margin: 4px;">Data Engineer</div>
+                        
+                    </div>
                 </div>
+            </div>
+    
+            <div style="font-size: 12px;">Specialized in <br></div>
+            <div class="inner-grid"  >  
+                <p class="shadowed-box" style="text-align: center;font-size: 13px; line-height:150%; width: 80%; word-spacing: 6px;margin: 0 auto; text-transform:none; background-color: rgb(28, 29, 28); border-radius: 20px; padding: 30px;">
+                    <img class="custom-img" src="./spark.png" alt="">
+                    <img class="custom-img" src="./databricks.png" alt="">
+                    <img class="custom-img" src="./python.png" alt="">
+                    <img class="custom-img" src="./pandas.png" alt="">
+                    <img class="custom-img" src="./numpy.png" alt="">
+                    <img class="custom-img" src="./azure.png" alt=""><br>
+                    <img class="custom-img" src="./aws.png" alt="">
+                    <img class="custom-img" src="./tensorflow.png" alt="">
+                    <img class="custom-img" src="./snowflake.png" alt="">
+                    <img class="custom-img" src="./kafka.png" alt="">
+                    <br>
+                </p>
+            </div>
+    
+            <div style="font-size: 1vh; text-align: center; word-spacing: 3px;" >Seeking Mentorship ? <br>Book your appointment<a href="https://topmate.io/embed/profile/crepantherx?theme=93C5F9" class="button-link">here</a>
             </div>
         </div>
 
-        <div style="font-size: 12px;">Specialized in <br></div>
-        <div class="inner-grid"  >  
-            <p class="shadowed-box" style="text-align: center;font-size: 13px; line-height:150%; width: 100%; word-spacing: 6px;margin: 0 auto; text-transform:none; background-color: rgb(28, 29, 28); border-radius: 20px; padding: 30px;">
-                <img class="custom-img" src="./spark.png" alt="">
-                <img class="custom-img" src="./databricks.png" alt="">
-                <img class="custom-img" src="./python.png" alt="">
-                <img class="custom-img" src="./pandas.png" alt="">
-                <img class="custom-img" src="./numpy.png" alt="">
-                <img class="custom-img" src="./azure.png" alt=""><br>
-                <img class="custom-img" src="./aws.png" alt="">
-                <img class="custom-img" src="./tensorflow.png" alt="">
-                <img class="custom-img" src="./snowflake.png" alt="">
-                <img class="custom-img" src="./kafka.png" alt="">
-                <br>
-            </p>
+        <div style="display: grid; place-items: center; place-content: center;">
+            <div class="a4-document shadowed-box" id="resume-content" style="background-color: #fff; color: #111;">
+                
+            </div>
+            <button id="download-pdf" style="color: #fff; margin: 20px;">                
+                <a href="./Sudhir Singh Data Engineer Resume.pdf" download="sudhir_singh_data_engineer_resume.pdf" style="color: #00ff4c">
+                    Download PDF</a>
+            </button>
         </div>
 
-        <!-- <div style="font-size: 12px;">Seeking mentorship?</div> -->
-        <div style="font-size: 1vh; text-align: center; word-spacing: 3px;" >Seeking Mentorship ? <br>Book your appointment<a href="https://topmate.io/embed/profile/crepantherx?theme=93C5F9" class="button-link">here</a>
-            <!-- <button>
-                <a href="https://topmate.io/embed/profile/crepantherx?theme=93C5F9" class="button-link">
-                    Seeking mentorship ? Book Appointment
-                </a>
-            </button> -->
-        </div>
+        
+        
+        
+    
+        
+
+
+
 
         <img id='arrow' id="point" src="./arrow.png" alt="">
     </main>
@@ -236,6 +254,7 @@
             <a href="contact.html">Email Me</a>
         </nav>
     </footer>
+    <script src="resume-script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="tilt.js"></script>
