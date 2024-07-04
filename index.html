@@ -186,18 +186,26 @@
         <div class="grid-container">
             <div class="grid-item">
                 <div class="profile-read">
-                    <div style="text-align: center;"><br>
-                        <img class="profile-picture" src="./self.png" alt="Profile Picture"><br><br>
+                    <div style="text-align: center;   display: grid;
+                    place-items: center;
+                    place-content: center;"><br>
                         <span id="my-name">Sudhir Singh</span>
-                            <div style="margin: 4px;">Data Engineer</div>
+                            <div style="margin: 4px; font-size: 1.4vh">Data Engineer</div><br>
+
+                            <div class="photograph-frame">
+                                <img src="./self.png" alt="Profile Picture">
+                            <div class="name">@crepantherx</div>
+
+                            </div>
+
                         
                     </div>
                 </div>
             </div>
     
-            <div style="font-size: 12px;">Specialized in <br></div>
+            <div style="font-size: 12px;">Specializes in <br></div>
             <div class="inner-grid"  >  
-                <p class="shadowed-box" style="text-align: center;font-size: 13px; line-height:150%; width: 80%; word-spacing: 6px;margin: 0 auto; text-transform:none; background-color: rgb(28, 29, 28); border-radius: 20px; padding: 30px;">
+                <p class="shadowed-box" style="text-align: center;font-size: 13px; line-height:150%; width: 80%; word-spacing: 6px;margin: 0 auto; text-transform:none; background-color: transparent; border-radius: 20px; padding: 30px;">
                     <img class="custom-img" src="./spark.png" alt="">
                     <img class="custom-img" src="./databricks.png" alt="">
                     <img class="custom-img" src="./python.png" alt="">
@@ -210,19 +218,43 @@
                     <img class="custom-img" src="./kafka.png" alt="">
                     <br>
                 </p>
+
             </div>
     
             <div style="font-size: 1vh; text-align: center; word-spacing: 3px;" >Seeking Mentorship ? <br>Book your appointment<a href="https://topmate.io/embed/profile/crepantherx?theme=93C5F9" class="button-link">here</a>
             </div>
         </div>
+        
 
         <div style="display: grid; place-items: center; place-content: center;">
-            <div class="a4-document shadowed-box" id="resume-content" style="background-color: #fff; color: #111; border-radius: 2%/2%;  padding-top: 3vh;
+            <div class="a4-document neomorphic-box"  style=" color: #111; border-radius: 1.5vh;  padding-top: 3vh;
             padding-bottom: 3vh;
             padding-right: 5vh;
-            padding-left: 5vh;">
-                
+            padding-left: 5vh; ">
+            <div id="resume-content"></div>
+            <svg>
+                <filter id="wavy2">
+                  <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
+                  <feDisplacementMap in="SourceGraphic" scale="20" />
+                </filter>
+              </svg>
+                           
             </div>
+
+        
+            
+
+
+
+
+          
+
+
+                  
+
+
+
+
             <button id="download-pdf" style="color: #fff; margin: 20px;">                
                 <a href="./Sudhir Singh Data Engineer Resume.pdf" download="sudhir_singh_data_engineer_resume.pdf" style="color: #00ff4c">
                     Download PDF</a>

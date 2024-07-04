@@ -1,6 +1,9 @@
 // Modularize your resume content here
 const resumeContent = `
     <div class="right">
+
+
+
         <div class="section">
             <h2 class="header">Summary</h2>
             <p><strong>Specialized in Apache Spark</strong> with 3.6 years of expertise in designing and <strong>delivering Big Data ingestion workflow and DevOps CI/CD pipelines</strong> on Azure Cloud to numerous clients across the globe. Additionally, <strong>Mentored 60+ working professionals in SQL</strong> over a period of 4 months.</p>
@@ -94,7 +97,7 @@ const resumeContent = `
                             <li>Provided operational support in detecting any discrepancy in 25+ data sources.</li>
                             <li><em>Tech Stack:</em> Hadoop, Scala, Hive, Delta Tables, Linux, Zeppelin, Ambari, Jira, Confluence</li>
                         </ul>
-                    </li>
+                    </li><br>
                     <li><strong>Pharma Insights Data Extraction & Analytics</strong> <span class="float-right">Apr 2022 - May 2022</span>
                         <ul class="itemize">
                             <li>Created ADF pipeline to fetch data from S3 to ADLS, using ELTL approach.</li>
@@ -103,7 +106,7 @@ const resumeContent = `
                             <li>Provided analytics insight report using Azure Databricks & presented it to clients.</li>
                             <li><em>Tech Stack:</em> SQL, Python, PySpark, Azure Data Factory, Data Bricks, Data Lake, Key Vault</li>
                         </ul>
-                    </li>
+                    </li><br>
                     <li><strong>Decision Support For Technician Allocation</strong> <span class="float-right">Aug 2021 - Mar 2021</span>
                         <ul class="itemize">
                             <li>Improved end-to-end service processes & cut down manual deployment by 75% by predicting proper utilization of technicians and minimizing customer wait time for best customer experience by generating 3000 recommendations per day, in near real-time, to mitigate the risk of the day.</li>
@@ -112,7 +115,7 @@ const resumeContent = `
                             <li>Written 40+ highly optimized SQL stored procedures to transform/aggregate raw data, API integrations to fetch live data.</li>
                             <li><em>Tech Stack:</em> Python, SQL, ML, CI/CD, AWS, Kubernetes, JFrog, Jenkins, Kubeflow</li>
                         </ul>
-                    </li>
+                    </li><br>
                     <li><strong>Control Tower Intrusion Detection Analytics</strong> <span class="float-right">Jan 2021 - July 2021</span>
                         <ul class="itemize">
                             <li>Worked closely with stakeholders, BA, & scrum masters to gather the business requirements.</li>
