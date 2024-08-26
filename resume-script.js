@@ -35,7 +35,7 @@ Azure DevOps CI/CD pipelines to automate and keep metadata always in control of 
                 <div class="subheader">Tech Mahindra, <span class="designation">Sydney, Australia</span></div>
                 <p class="date"><em>Data Engineer</em> <span class="float-right">Jan 2021 - Jan 2023</span></p>
                 <ul class="itemize">
-                    <li><strong><strong>Achieved a 95% improvement in estimating Estimated Time of Arrival (ETA)</strong> by de-
+                    <li><strong>Achieved a 95% improvement in estimating Estimated Time of Arrival (ETA)</strong> by de-
 livering a decision support system to technicians that enabled relocation based on forecasted ticket
 numbers, through the deployment, and prediction of a Machine Learning model on Kubeflow.</li>
                     <li><strong>Ingested billions of customer transactions</strong> by leveraging Cloudera Hortonworks Spark Archi-
