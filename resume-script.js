@@ -22,18 +22,41 @@ const resumeContent = `
                 <div class="subheader">Tiger Analytics, <span class="designation">Remote</span></div>
                 <p class="date"><em>Data Engineer</em> <span class="float-right">Jan 2023 - Present</span></p>
                 <ul class="itemize">
-                    <li><strong>Migrated and processed 10 PetaBytes of data</strong> into Azure Data Lake Storage as a part of the Common Data Foundation, streamlining the data foundation layer for improved accessibility and efficiency, resulting in a more robust data ecosystem.</li>
-                    <li><strong>Engineered & Delivered a metadata-driven, object-oriented PySpark Data Ingestion framework paired with Azure DevOps CI/CD pipelines</strong> that empowered automated deployment of client configuration changes, reducing re-development needs by 90% and minimizing further operational cost.</li>
+<li>Built a single enterprise-wide unified data repository by unifying 10 Petabytes of data
+requirements from numerous products, re-developing to standardize the development process using
+an on-prem Python-based framework, by individually contributing and leading a team of 7 Data
+Engineers as a Data Engineering Lead.</li>
+
+                    <li>Reduced Databricks compute resources cost by 50%, by optimizing a Spark job to process
+7.5 TB of data in a single run, through detailed analysis of data transformations, Spark submit
+configurations, data spills, partition sizes, and worker utilization.</li>
+                    <li>Achieved 40% reduction in job computes cost of 35 daily Spark jobsresponsible for ingest-
+ing incremental loads by reviewing SLA & re-developing to remove skewness in data by rewriting
+the partitioner & optimizing Spark configurations, through detailed understanding of data.</li>
+                    <li>Reduced re-development needs by 90% and minimized operational costs, by developing a
+metadata-driven, object-oriented PySpark API-based Data Ingestion framework and pairing it with
+Azure DevOps CI/CD pipelines to automate and keep metadata always in control of client</li>
+                    <li></li>
+
+
+
+
                 </ul>
             </div>
             <div class="subsection">
                 <div class="subheader">Tech Mahindra, <span class="designation">Sydney, Australia</span></div>
                 <p class="date"><em>Data Engineer</em> <span class="float-right">Jan 2021 - Jan 2023</span></p>
                 <ul class="itemize">
-                    <li><strong>Delivered</strong> a decision support system <strong>to help technicians relocate based on forecasted ticket numbers</strong> before, backed up by Machine Learning model deployment and prediction, leading to 95% improvement in ETA estimation.</li>
-                    <li><strong>Ingested Billions of customer data</strong> into cloud Hortonworks-based Data Ingestion framework.</li>
-                    <li><strong>Led the establishment of 3+ ML CI/CD pipelines on AWS using Kubernetes</strong>, Jenkins, and GitHub, resulting in improved deployment processes and increased productivity for the team.</li>
-                    <li><strong>Conducted</strong> comprehensive training sessions for 60 employees on SQL Analytics, data modeling techniques, and building scalable data pipelines using PySpark and Apache Airflow.</li>
+                    <li>Achieved a 95% improvement in estimating Estimated Time of Arrival (ETA) by de-
+livering a decision support system to technicians that enabled relocation based on forecasted ticket
+numbers, through the deployment, and prediction of a Machine Learning model on Kubeflow.</li>
+                    <li>Ingested billions of customer transactions by leveraging Cloudera Hortonworks Spark Archi-
+tecture to process and manage large-scale data efficiently.</li>
+                    <li>Led the establishment of 3+ ML CI/CD pipelines on AWS using Kubernetes, Jenkins,
+and GitHub, resulting in improved deployment processes and increased productivity for the team.</li>
+                    <li>Conducted comprehensive training sessions for 60 employees on SQL Analytics, data modeling
+techniques, and building scalable data pipelines using PySpark and Apache Airflow.</li>
+                
                 </ul>
             </div>
         </div>
