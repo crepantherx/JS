@@ -2,19 +2,7 @@
 const resumeContent = `
     <div class="right">
 
-        <div class="section">
-            <h2 class="header">Skills</h2>
-            <ul class="itemize">
-                <li><strong>Transactional DBMS:</strong> Microsoft SQL Server, MySQL, PostgreSQL</li>
-                <li><strong>Distributed Storage System:</strong> ADLS, Amazon S3</li>
-                <li><strong>Big Data Processing & Streaming:</strong> Apache Spark, Apache Kafka</li>
-                <li><strong>Data Orchestration:</strong> Apache Airflow, Azure Data Factory</li>
-                <li><strong>Data Processing:</strong> Python, PySpark API, SparkSQL API, Pandas, SpaCy, NLP</li>
-                <li><strong>Data Warehousing:</strong> Snowflake, BigQuery, Redshift</li>
-                <li><strong>Machine Learning:</strong> Scikit-learn, TensorFlow, Keras, Seaborn, Matplotlib, NumPy, SciPy</li>
-                <li><strong>DevOps:</strong> Azure DevOps, Splunk, Kubernetes, Kubeflow, Jenkins, JFrog, Docker, GIT</li>
-            </ul>
-        </div>
+
 
         <div class="section">
             <h2 class="header">Work Experience</h2>
@@ -36,7 +24,7 @@ the partitioner & optimizing Spark configurations, through detailed understandin
                     <li>Reduced re-development needs by 90% and minimized operational costs, by developing a
 metadata-driven, object-oriented PySpark API-based Data Ingestion framework and pairing it with
 Azure DevOps CI/CD pipelines to automate and keep metadata always in control of client</li>
-                    <li></li>
+                   
 
 
 
@@ -60,6 +48,24 @@ techniques, and building scalable data pipelines using PySpark and Apache Airflo
                 </ul>
             </div>
         </div>
+
+        <div class="section">
+            <h2 class="header">Skills</h2>
+            <ul class="itemize">
+                <li><strong>Transactional DBMS:</strong> Microsoft SQL Server, MySQL, PostgreSQL</li>
+                <li><strong>Distributed Storage System:</strong> ADLS, Amazon S3</li>
+                <li><strong>Big Data Processing & Streaming:</strong> Apache Spark, Apache Kafka</li>
+                <li><strong>Data Orchestration:</strong> Apache Airflow, Azure Data Factory</li>
+                <li><strong>Data Processing:</strong> Python, PySpark API, SparkSQL API, Pandas, SpaCy, NLP</li>
+                <li><strong>Data Warehousing:</strong> Snowflake, BigQuery, Redshift</li>
+                <li><strong>Machine Learning:</strong> Scikit-learn, TensorFlow, Keras, Seaborn, Matplotlib, NumPy, SciPy</li>
+                <li><strong>DevOps:</strong> Azure DevOps, Splunk, Kubernetes, Kubeflow, Jenkins, JFrog, Docker, GIT</li>
+            </ul>
+        </div>
+
+
+
+        
 
         <div class="section">
             <h2 class="header">Education</h2>
