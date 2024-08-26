@@ -2,13 +2,6 @@
 const resumeContent = `
     <div class="right">
 
-
-
-        <div class="section">
-            <h2 class="header">Summary</h2>
-            <p><strong>Specialized in Apache Spark</strong> with 3.6 years of expertise in designing and <strong>delivering Big Data ingestion workflow and DevOps CI/CD pipelines</strong> on Azure Cloud to numerous clients across the globe. Additionally, <strong>Mentored 60+ working professionals in SQL</strong> over a period of 4 months.</p>
-        </div>
-
         <div class="section">
             <h2 class="header">Skills</h2>
             <ul class="itemize">
