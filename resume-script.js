@@ -23,7 +23,7 @@ ing incremental loads by reviewing SLA & re-developing to remove skewness in dat
 the partitioner & optimizing Spark configurations, through detailed understanding of data.</li>
                     <li>Reduced re-development needs by 90% and minimized operational costs, by developing a
 metadata-driven, object-oriented PySpark API-based Data Ingestion framework and pairing it with
-Azure DevOps CI/CD pipelines to automate and keep metadata always in control of client</li>
+Azure DevOps CI/CD pipelines to automate and keep metadata always in control of client.</li>
                    
 
 
